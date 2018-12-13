@@ -51,7 +51,7 @@ public:
 		return stream.str();
 	}
 
-	int getNumberOfCategories() { return m_expenses.size(); }
+	int getNumberOfCategories() { return static_cast<int>(m_expenses.size()); }
 
 	std::vector<string> getCategories()
 	{

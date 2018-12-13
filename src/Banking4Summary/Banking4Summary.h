@@ -9,7 +9,7 @@ static int getIndexOfColumn(const std::vector<std::string> &headers, string keyw
 
 	if (itBuchungsdatum != headers.end())
 	{
-		return (itBuchungsdatum - headers.begin());
+		return (static_cast<int>(itBuchungsdatum - headers.begin()));
 	}
 	else
 	{
